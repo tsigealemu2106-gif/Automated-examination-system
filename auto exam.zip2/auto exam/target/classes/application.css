@@ -1,0 +1,487 @@
+/* --- MODERN DESIGN SYSTEM --- */
+root {
+    -fx-font-family: "Segoe UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    -fx-background-color: #f8fafc;
+    -fx-base: #ffffff;
+    -fx-focus-color: #2563eb;
+    -fx-faint-focus-color: rgba(37, 99, 235, 0.2);
+    -fx-accent: #2563eb;
+}
+
+/* --- ADVANCED TYPOGRAPHY --- */
+.title-text {
+    -fx-font-size: 36px;
+    -fx-font-weight: 900;
+    -fx-fill: #1e293b;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-letter-spacing: 0.5px;
+}
+
+.section-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1e293b;
+    -fx-letter-spacing: 0.3px;
+}
+
+.subtitle-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: #64748b;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 0.2px;
+}
+
+.info-text {
+    -fx-font-size: 15px;
+    -fx-text-fill: #475569;
+    -fx-line-spacing: 6px;
+    -fx-letter-spacing: 0.1px;
+}
+
+/* --- ENHANCED TOOLBAR --- */
+.toolbar-bar {
+    -fx-background-color: linear-gradient(to right, #2563eb, #7c3aed);
+    -fx-padding: 16 32;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #1d4ed8;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.3), 8, 0, 0, 4);
+    -fx-background-radius: 0 0 16 16;
+}
+
+.toolbar-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 0.2px;
+}
+
+/* --- MODERN CARDS & CONTAINERS --- */
+.login-grid {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 24px;
+    -fx-padding: 60px;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.15), 40, 0, 0, 16);
+    -fx-border-radius: 24px;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1px;
+}
+
+.metric-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 32px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(241, 245, 249, 0.8);
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.08), 20, 0, 0, 8);
+    -fx-transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.12), 25, 0, 0, 12);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.exam-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 32px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(241, 245, 249, 0.8);
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.08), 20, 0, 0, 8);
+}
+
+.metric-title {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 1px;
+    -fx-opacity: 0.8;
+}
+
+.metric-value {
+    -fx-text-fill: #6366f1;
+    -fx-font-size: 42px;
+    -fx-font-weight: 900;
+    -fx-letter-spacing: -0.5px;
+}
+
+/* --- PREMIUM BUTTONS --- */
+.button {
+    -fx-cursor: hand;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-padding: 14px 28px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-letter-spacing: 0.3px;
+    -fx-transition: all 0.2s ease;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+.primary-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.primary-button:hover {
+    -fx-background-color: #1d4ed8;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.4), 10, 0, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #1e40af;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.3), 4, 0, 0, 2);
+}
+
+.secondary-button {
+    -fx-background-color: #f0f9ff;
+    -fx-text-fill: #0f172a;
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 2px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #e0f2fe;
+    -fx-border-color: #2563eb;
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 130, 246, 0.3), 8, 0, 0, 4);
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+
+.danger-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.danger-button:hover {
+    -fx-background-color: #dc2626;
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.3), 8, 0, 0, 4);
+}
+
+/* --- ENHANCED FORM ELEMENTS --- */
+.text-field, .password-field {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 12px 16px;
+    -fx-font-size: 15px;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-transition: all 0.2s ease;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #6366f1;
+    -fx-effect: dropshadow(three-pass-box, rgba(99, 102, 241, 0.2), 6, 0, 0, 0);
+}
+
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.combo-box:showing {
+    -fx-border-color: #6366f1;
+}
+
+/* --- STATUS LABELS --- */
+.status-label {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.timer-label {
+    -fx-background-color: #fef3c7;
+    -fx-text-fill: #92400e;
+    -fx-font-weight: 700;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #f59e0b;
+    -fx-border-width: 1px;
+    -fx-letter-spacing: 0.5px;
+}
+
+/* --- TABLES --- */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f1f5f9; /* Made slightly darker for better contrast */
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 0 0 2px 0; /* Adds a nice bottom border to the header */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/* --- THE FIX: Target the secret label inside the column header! --- */
+.table-view .column-header .label {
+    -fx-text-fill: #1e293b; /* Dark slate blue text - very visible! */
+    -fx-font-weight: 900; /* Extra bold */
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8fafc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e0e7ff;
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Ensure selected row text stays readable */
+.table-row-cell:selected .text {
+    -fx-fill: #3730a3; 
+    -fx-font-weight: bold;
+}
+
+/* --- TAB PANE ENHANCEMENTS --- */
+.tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 200px;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 12px 24px;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+}
+
+.tab:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px 1px 0 1px;
+    -fx-border-radius: 12px 12px 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 4, 0, 0, 2);
+}
+
+.tab:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- RADIO BUTTONS & CHECKBOXES --- */
+.radio-button, .check-box {
+    -fx-font-size: 15px;
+    -fx-text-fill: #374151;
+    -fx-padding: 8px 0;
+}
+
+.radio-button .radio {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 50%;
+    -fx-border-width: 2px;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #6366f1;
+    -fx-border-color: #6366f1;
+}
+
+/* --- TEXT AREA --- */
+.text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-font-size: 15px;
+    -fx-padding: 16px;
+}
+
+.text-area:focused {
+    -fx-border-color: #6366f1;
+}
+
+/* --- FOOTER --- */
+.footer {
+    -fx-background-color: linear-gradient(to right, #f59e0b, #ef4444, #8b5cf6);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 2 0 0 0;
+}
+
+/* --- ANIMATIONS & TRANSITIONS --- */
+.metric-card, .button, .text-field, .combo-box {
+    -fx-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- SCROLL BAR STYLING --- */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(156, 163, 175, 0.5);
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(156, 163, 175, 0.7);
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.secondary-button {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8px;
+    -fx-text-fill: #334155;
+}
+.secondary-button:hover {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #94a3b8;
+}
+
+.danger-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+}
+.danger-button:hover {
+    -fx-background-color: #dc2626;
+}
+
+/* --- INPUTS & FORMS --- */
+.text-field, .password-field, .combo-box, .text-area {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+}
+.text-field:focused, .password-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: #4f46e5;
+    -fx-border-width: 2px;
+    -fx-padding: 7px 11px; /* Adjust padding to prevent jumping when border thickens */
+}
+
+/* --- EXAM SPECIFIC --- */
+.question-area {
+    -fx-font-size: 18px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #1e293b;
+    -fx-border-color: transparent; /* Makes the text area look like clean text, not a box */
+    -fx-background-color: transparent;
+}
+.question-area .content {
+    -fx-background-color: transparent;
+}
+
+.option-button {
+    -fx-font-size: 16px;
+    -fx-padding: 12px;
+    -fx-text-fill: #334155;
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+.option-button:selected {
+    -fx-background-color: #e0e7ff;
+    -fx-border-color: #4f46e5;
+    -fx-text-fill: #3730a3;
+    -fx-font-weight: bold;
+}
+
+.timer-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #334155;
+    -fx-background-color: #f1f5f9;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 20px;
+}
+.timer-warning {
+    -fx-text-fill: white;
+    -fx-background-color: #ef4444;
+}
+
+/* --- TABLES --- */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.table-view .column-header-background {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 8px 8px 0 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+}
+.table-row-cell:odd {
+    -fx-background-color: #fbfcfd;
+}
+.table-row-cell:selected {
+    -fx-background-color: #e0e7ff;
+    -fx-table-cell-border-color: transparent;
+}
+/* --- CHART LIGHT MODE FIXES --- */
+/* --- CHART LIGHT MODE FIXES --- */
+.chart-title {
+    -fx-text-fill: #1e293b; 
+    -fx-font-weight: bold;
+}
+.axis-label {
+    -fx-text-fill: #334155; 
+}
+/* THE FIX: Use the special tick-label-fill property */
+.axis {
+    -fx-tick-label-fill: #475569; 
+}
+
+/* --- SIDEBAR STYLES --- */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 14px;
+    -fx-padding: 12 16;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(37, 99, 235, 0.2);
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.3), 6, 0, 0, 3);
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: rgba(29, 78, 216, 0.3);
+    -fx-text-fill: #ffffff;
+}
